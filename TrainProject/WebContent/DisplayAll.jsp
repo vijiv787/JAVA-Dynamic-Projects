@@ -9,6 +9,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<style type="text/css">
+	body {
+		
+			background-image: url("train.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+	}
+	table {
+  			
+  			color: yellow;
+	}
+	
+</style>
 </head>
 <body>
 <% 
@@ -38,12 +52,27 @@
 		%>
 				<html>
 					<body>
-						<table>
+						<table >
 							<tr>
 								<td><h2> <% 
 								out.println("Train Id---> "+rs.getString(1));
+								%>
+								</td>
+							
+								<td><h2> <% 
+								
 								out.println("Name---> "+rs.getString(2));
+								%>
+								</td>
+							
+								<td><h2> <% 
+								
 								out.println("Src---> "+rs.getString(3));
+								%>
+								</td>
+							
+								<td><h2> <% 
+							
 								out.println("Dest---> "+rs.getString(4));%>
 								</td>
 							</tr>
